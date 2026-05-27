@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Privacy Policy — Airspace Alerts</title>
+  <style>
+    :root { color-scheme: light; }
+    body { font: 16px/1.6 -apple-system, BlinkMacSystemFont, "Segoe UI", system-ui, sans-serif; color: #111; max-width: 720px; margin: 40px auto; padding: 0 20px; }
+    h1 { font-size: 28px; margin-bottom: 4px; }
+    h2 { font-size: 20px; margin-top: 32px; }
+    p, li { color: #222; }
+    code { background: #f3f3f3; padding: 1px 6px; border-radius: 4px; font-size: 13px; }
+    .muted { color: #666; font-size: 14px; }
+    a { color: #0066cc; }
+    hr { border: 0; border-top: 1px solid #eee; margin: 32px 0; }
+  </style>
+</head>
+<body>
+  <h1>Privacy Policy</h1>
+  <p class="muted">Last updated: May 26, 2026</p>
+
+  <p>This Privacy Policy describes how the Airspace Alerts iOS application (“Airspace Alerts,” “we,” “us”) collects, uses, and protects information when you use the app.</p>
+
+  <h2>Summary</h2>
+  <ul>
+    <li>We do not collect your real name, email address, phone number, contacts, photos, microphone audio, camera, or device location.</li>
+    <li>We generate a random installation identifier on your device so we can deliver notifications to the right device.</li>
+    <li>If you grant notification permission, we store the Apple Push Notification (APNs) token that Apple gives us, so our servers can send you alerts about aircraft matching your saved searches.</li>
+    <li>If you subscribe, our subscription provider (RevenueCat) stores billing-related identifiers on our behalf. Apple processes the actual payment; we never see your payment card.</li>
+  </ul>
+
+  <h2>What we collect</h2>
+  <h3>Installation identifier</h3>
+  <p>When you first open Airspace Alerts, the app generates a random UUID — an “installation ID.” This identifier is stored on your device and sent to our backend so that your saved alerts and subscription entitlements can be associated with this installation. It is not derived from any device hardware identifier and cannot be used to identify you personally.</p>
+
+  <h3>Push notification token</h3>
+  <p>If you grant the app permission to send notifications, Apple provides us with a push token for your device. We store this token on our servers and use it solely to deliver notifications about aircraft that match your alerts. We do not share the token with third parties other than Apple’s Push Notification service.</p>
+
+  <h3>Alert configuration</h3>
+  <p>The alerts you create — a location, search radius, and altitude range — are stored on our backend so the matching engine can evaluate them in real time. Alerts are tied to your installation identifier; they are not tied to a real-world identity.</p>
+
+  <h3>Flight event history</h3>
+  <p>When an aircraft matches one of your alerts, the resulting event (aircraft identifier, position, altitude, timestamp) is stored on our backend and synced back to your device. This data is public-domain ADS-B telemetry; it is not personal information about you.</p>
+
+  <h3>Subscription identifiers</h3>
+  <p>If you start a free trial or paid subscription, we use RevenueCat to manage subscription state. RevenueCat receives your installation ID (used as the RevenueCat <code>app_user_id</code>) and the subscription product identifier. Apple — not us, and not RevenueCat — processes payment. We do not have access to your payment method.</p>
+
+  <h2>What we do not collect</h2>
+  <p>We do not collect, request, or store:</p>
+  <ul>
+    <li>Your real name, email address, phone number, or postal address</li>
+    <li>Your device’s GPS location, contacts, photos, camera, or microphone</li>
+    <li>Advertising identifiers (IDFA)</li>
+    <li>Browsing or search history outside the app</li>
+    <li>Health, financial, or biometric data</li>
+  </ul>
+
+  <h2>How we use information</h2>
+  <ul>
+    <li>To deliver push notifications when aircraft match your saved alerts.</li>
+    <li>To keep your alerts and flight history synced between your devices for the same installation.</li>
+    <li>To validate and apply your subscription entitlement.</li>
+    <li>To diagnose service-level issues (aggregate counts of requests, errors, and notification delivery).</li>
+  </ul>
+
+  <h2>Third parties</h2>
+  <ul>
+    <li><strong>Apple Push Notification service</strong> — receives push tokens and delivers notifications to your device.</li>
+    <li><strong>RevenueCat</strong> — manages subscription state on our behalf. See <a href="https://www.revenuecat.com/privacy/" target="_blank" rel="noopener">RevenueCat’s privacy policy</a>.</li>
+    <li><strong>Railway</strong> — hosts our backend. Operational logs may transit Railway’s infrastructure.</li>
+    <li><strong>Public aircraft telemetry providers</strong> — we query public ADS-B feeds to evaluate alerts. We do not send your installation ID or alert configuration to these providers.</li>
+  </ul>
+
+  <h2>Subscriptions</h2>
+  <p>Airspace Alerts offers auto-renewing subscriptions:</p>
+  <ul>
+    <li>Airspace Alerts Pro — Monthly: $4.99 / month, with a 3-day free trial.</li>
+    <li>Airspace Alerts Pro — Yearly: $29.99 / year, with a 7-day free trial.</li>
+  </ul>
+  <p>Subscriptions auto-renew until canceled. You can manage or cancel from <strong>Settings → Apple ID → Subscriptions</strong> on your iPhone or iPad. Refunds are handled by Apple per Apple’s standard refund policy.</p>
+
+  <h2>Data retention and deletion</h2>
+  <p>Your installation identifier, alerts, and flight event history are retained for as long as your installation remains active. You can delete your alerts and event history from within the app at any time. If you uninstall the app and would like us to delete the server-side data associated with your installation, contact us using the email below.</p>
+
+  <h2>Children</h2>
+  <p>Airspace Alerts is not directed to children under 13, and we do not knowingly collect information from children under 13.</p>
+
+  <h2>Security</h2>
+  <p>All communication between the app and our backend is encrypted in transit using HTTPS / TLS. Subscription tokens are stored in the iOS Keychain on your device.</p>
+
+  <h2>Changes to this policy</h2>
+  <p>If we make material changes to this Privacy Policy, we will update the “Last updated” date at the top and, where feasible, surface a notice in the app. Continued use of the app after such changes constitutes acceptance.</p>
+
+  <h2>Contact</h2>
+  <p>Questions or requests: <a href="mailto:support@shiftthree.com">support@shiftthree.com</a></p>
+
+  <hr>
+  <p class="muted"><a href="./">Back to Airspace Alerts</a></p>
+</body>
+</html>

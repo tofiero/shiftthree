@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Heat Signal Support</title>
+    <meta name="description" content="Get help with Heat Signal. Contact support@shiftthree.com.">
+    <style>
+      :root {
+        --hotter-orange: #ff7a00;
+        --hotter-dark: #0f0f10;
+        --hotter-bg: #0b0b0c;
+        --hotter-text: #ffffff;
+        --hotter-text-dim: #c9c9ce;
+      }
+      html, body { height: 100%; }
+      body {
+        margin: 0;
+        background: radial-gradient(1200px 800px at 20% 20%, rgba(64, 0, 255, 0.18), transparent 60%),
+                    radial-gradient(1000px 700px at 80% 80%, rgba(255, 64, 0, 0.12), transparent 60%),
+                    var(--hotter-bg);
+        color: var(--hotter-text);
+        font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "SF Pro Display", Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+        display: grid;
+        place-items: center;
+      }
+      .card {
+        width: min(640px, 92vw);
+        background: linear-gradient(180deg, rgba(255,255,255,0.06), rgba(255,255,255,0.02));
+        border: 1px solid rgba(255,255,255,0.08);
+        border-radius: 16px;
+        padding: 28px 24px;
+        box-shadow: 0 10px 30px rgba(0,0,0,0.35);
+        backdrop-filter: blur(6px);
+      }
+      .logo {
+        display: inline-flex;
+        align-items: center;
+        gap: 10px;
+        margin-bottom: 8px;
+      }
+      .flame {
+        width: 28px; height: 28px;
+        background: conic-gradient(from 180deg at 50% 60%, #ffd9b3, #ffae66, #ff7a00, #d45f00 80%, #ffd9b3);
+        border-radius: 10px 10px 16px 16px;
+        transform: rotate(45deg);
+        box-shadow: 0 6px 20px rgba(255,122,0,0.45);
+      }
+      h1 {
+        margin: 0;
+        font-size: clamp(24px, 4vw, 32px);
+        letter-spacing: 0.2px;
+      }
+      p { color: var(--hotter-text-dim); margin: 10px 0 22px; line-height: 1.5; }
+      .actions { display: flex; gap: 12px; flex-wrap: wrap; }
+      .btn {
+        appearance: none; -webkit-appearance: none;
+        text-decoration: none;
+        background: var(--hotter-orange);
+        color: #0a0703;
+        font-weight: 700;
+        padding: 14px 18px;
+        border-radius: 12px;
+        border: none;
+        box-shadow: 0 8px 20px rgba(255,122,0,0.35);
+        transition: transform .06s ease, filter .2s ease, box-shadow .2s ease;
+        display: inline-flex;
+        align-items: center;
+        gap: 10px;
+      }
+      .btn:hover { transform: translateY(-1px); filter: brightness(1.03); box-shadow: 0 10px 26px rgba(255,122,0,0.4); }
+      .btn:active { transform: translateY(0); filter: brightness(0.98); }
+      .btn-secondary {
+        background: transparent;
+        color: var(--hotter-text);
+        border: 1px solid rgba(255,255,255,0.16);
+        box-shadow: none;
+      }
+      .meta { margin-top: 16px; font-size: 13px; color: var(--hotter-text-dim); }
+      .pill { display:inline-block; padding: 6px 10px; border-radius: 999px; border: 1px solid rgba(255,255,255,0.12); font-size: 12px; }
+      @media (max-width: 420px) { .actions { flex-direction: column; } }
+    </style>
+  </head>
+  <body>
+    <main class="card" role="main">
+      <div class="logo" aria-label="Heat Signal">
+        <span class="flame" aria-hidden="true"></span>
+        <h1>Heat Signal Support</h1>
+      </div>
+      <p>
+        Feeling left out in the cold? Let's find the signal back to the heat. Tap the button below to email our support team.
+      </p>
+      <div class="actions">
+        <a class="btn" href="mailto:support@shiftthree.com?subject=Heat%20Signal%20Support" aria-label="Email Heat Signal Support">
+          Email Support
+        </a>
+      </div>
+      <div class="meta">
+        <span class="pill">Response time: typically under 1 business day</span>
+      </div>
+    </main>
+  </body>
+  </html>
+
+
